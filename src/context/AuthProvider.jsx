@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import AuthContext from './authContext';
 
-const USERS_STORAGE_KEY = 'techlance_users';
 const SESSION_STORAGE_KEY = 'techlance_session';
 
 const safeRead = (key, fallback) => {
@@ -25,83 +24,125 @@ const safeWrite = (key, value) => {
   window.localStorage.setItem(key, JSON.stringify(value));
 };
 
-const makeId = () => {
-  if (typeof crypto !== 'undefined' && crypto.randomUUID) {
-    return crypto.randomUUID();
+const requestJson = async (path, options = {}) => {
+  const session = safeRead(SESSION_STORAGE_KEY, null);
+  const headers = {
+    'Content-Type': 'application/json',
+    ...(options.headers || {}),
+  };
+
+  if (session?.token) {
+    headers.Authorization = `Bearer ${session.token}`;
   }
 
-  return `${Date.now()}-${Math.random().toString(16).slice(2)}`;
+  const response = await fetch(path, {
+    ...options,
+    headers,
+  });
+
+  const payload = await response.json().catch(() => null);
+
+  if (!response.ok) {
+    throw new Error(payload?.message || 'Something went wrong.');
+  }
+
+  return payload;
 };
 
 export const AuthProvider = ({ children }) => {
-  const [users, setUsers] = useState(() => safeRead(USERS_STORAGE_KEY, []));
-  const [currentUser, setCurrentUser] = useState(() => safeRead(SESSION_STORAGE_KEY, null));
+  const [currentUser, setCurrentUser] = useState(() => safeRead(SESSION_STORAGE_KEY, null)?.user || null);
+  const [session, setSession] = useState(() => safeRead(SESSION_STORAGE_KEY, null));
+  const [isAuthReady, setIsAuthReady] = useState(false);
 
   useEffect(() => {
-    safeWrite(USERS_STORAGE_KEY, users);
-  }, [users]);
+    const verifySession = async () => {
+      const storedSession = safeRead(SESSION_STORAGE_KEY, null);
 
-  useEffect(() => {
-    if (currentUser) {
-      safeWrite(SESSION_STORAGE_KEY, currentUser);
-    } else if (typeof window !== 'undefined') {
-      window.localStorage.removeItem(SESSION_STORAGE_KEY);
-    }
-  }, [currentUser]);
+      if (!storedSession?.token) {
+        setCurrentUser(null);
+        setSession(null);
+        setIsAuthReady(true);
+        return;
+      }
 
-  const register = ({ name, email, password }) => {
-    const normalizedEmail = email.trim().toLowerCase();
-    const normalizedName = name.trim();
+      try {
+        const data = await requestJson('/api/me', {
+          method: 'GET',
+          headers: {
+            Authorization: `Bearer ${storedSession.token}`,
+          },
+        });
 
-    if (!normalizedName) {
-      throw new Error('Please enter your name.');
-    }
-
-    if (!normalizedEmail) {
-      throw new Error('Please enter your email.');
-    }
-
-    if (!password || password.length < 6) {
-      throw new Error('Password must be at least 6 characters.');
-    }
-
-    const existingUser = users.find((user) => user.email === normalizedEmail);
-    if (existingUser) {
-      throw new Error('An account with this email already exists.');
-    }
-
-    const newUser = {
-      id: makeId(),
-      name: normalizedName,
-      email: normalizedEmail,
-      password,
+        const nextSession = { token: storedSession.token, user: data.user };
+        setCurrentUser(data.user);
+        setSession(nextSession);
+        safeWrite(SESSION_STORAGE_KEY, nextSession);
+      } catch {
+        setCurrentUser(null);
+        setSession(null);
+        if (typeof window !== 'undefined') {
+          window.localStorage.removeItem(SESSION_STORAGE_KEY);
+        }
+      } finally {
+        setIsAuthReady(true);
+      }
     };
 
-    setUsers((current) => [...current, newUser]);
-    setCurrentUser({ id: newUser.id, name: newUser.name, email: newUser.email });
-    return newUser;
+    verifySession();
+  }, []);
+
+  const register = async ({ name, email, password }) => {
+    const payload = await requestJson('/api/register', {
+      method: 'POST',
+      body: JSON.stringify({ name, email, password }),
+    });
+
+    const nextSession = { token: payload.token, user: payload.user };
+    setCurrentUser(payload.user);
+    setSession(nextSession);
+    safeWrite(SESSION_STORAGE_KEY, nextSession);
+    return payload.user;
   };
 
-  const login = ({ email, password }) => {
-    const normalizedEmail = email.trim().toLowerCase();
-    const matchedUser = users.find((user) => user.email === normalizedEmail && user.password === password);
+  const login = async ({ email, password }) => {
+    const payload = await requestJson('/api/login', {
+      method: 'POST',
+      body: JSON.stringify({ email, password }),
+    });
 
-    if (!matchedUser) {
-      throw new Error('Invalid email or password.');
+    const nextSession = { token: payload.token, user: payload.user };
+    setCurrentUser(payload.user);
+    setSession(nextSession);
+    safeWrite(SESSION_STORAGE_KEY, nextSession);
+    return payload.user;
+  };
+
+  const logout = async () => {
+    if (session?.token) {
+      try {
+        await requestJson('/api/logout', {
+          method: 'POST',
+          headers: {
+            Authorization: `Bearer ${session.token}`,
+          },
+          body: JSON.stringify({}),
+        });
+      } catch {
+        // Ignore logout network errors and clear local session anyway.
+      }
     }
 
-    const session = { id: matchedUser.id, name: matchedUser.name, email: matchedUser.email };
-    setCurrentUser(session);
-    return session;
-  };
-
-  const logout = () => {
     setCurrentUser(null);
+    setSession(null);
+    if (typeof window !== 'undefined') {
+      window.localStorage.removeItem(SESSION_STORAGE_KEY);
+    }
   };
 
   const value = {
     currentUser,
     isAuthenticated: Boolean(currentUser),
+    isAuthReady,
     register,
     login,
     logout,
@@ -109,4 +150,3 @@ export const AuthProvider = ({ children }) => {
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 };
-

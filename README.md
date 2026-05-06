@@ -1,16 +1,57 @@
-# React + Vite
+# Techlance Solutions Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Official website for Techlance Solutions, built with a modern React and Vite frontend.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Frontend
+- React 19
+- Vite
+- React Router DOM
+- Framer Motion
+- Lucide React
+- Plain CSS with component-level inline styling
+- Browser `localStorage` for session and theme persistence
 
-## React Compiler
+### Backend
+- Node.js
+- Native `http` server
+- REST API for authentication and session handling
+- Password hashing with `crypto`
+- In-memory user and session storage
+- Optional email service can be added later for verification and contact forms
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Database
+- No database is used
+- All users and sessions are stored in memory on the backend
+- Data resets when the server restarts
 
-## Expanding the ESLint configuration
+### Current Status
+- A lightweight backend is implemented in this repository
+- Authentication is handled through the backend API
+- Session and theme data are still persisted in the browser for convenience
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Production Build
+
+```bash
+npm install
+npm run build
+```
+
+## Development
+
+```bash
+npm install
+npm run dev
+```
+
+## Backend
+
+```bash
+npm run server
+```
+
+## Notes
+
+- The backend is intentionally database-free.
+- If you want persistence later, the next step would be to add MongoDB or PostgreSQL.

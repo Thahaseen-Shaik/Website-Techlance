@@ -1,2 +1,10 @@
-// Keep the Vite config dependency-free so Windows config loading stays stable.
-export default {}
+export default {
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3001',
+        changeOrigin: true,
+      },
+    },
+  },
+};

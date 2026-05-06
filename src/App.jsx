@@ -40,7 +40,12 @@ const ScrollToTop = () => {
 };
 
 const RouteFallback = () => {
-  const { isAuthenticated } = useAuth();
+  const { isAuthenticated, isAuthReady } = useAuth();
+
+  if (!isAuthReady) {
+    return null;
+  }
+
   return <Navigate to={isAuthenticated ? '/' : '/login'} replace />;
 };
 

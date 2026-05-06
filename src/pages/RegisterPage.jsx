@@ -10,13 +10,13 @@ const RegisterPage = () => {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     setError('');
     setLoading(true);
 
     try {
-      register(form);
+      await register(form);
       navigate('/', { replace: true });
     } catch (err) {
       setError(err.message || 'Registration failed.');

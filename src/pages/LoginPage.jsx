@@ -13,13 +13,13 @@ const LoginPage = () => {
 
   const from = location.state?.from?.pathname || '/';
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     setError('');
     setLoading(true);
 
     try {
-      login(form);
+      await login(form);
       navigate(from, { replace: true });
     } catch (err) {
       setError(err.message || 'Login failed.');
