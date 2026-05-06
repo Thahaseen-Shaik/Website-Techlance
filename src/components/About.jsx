@@ -16,7 +16,7 @@ const About = () => {
                             Innovation Has <span className="gradient-text">No Borders</span>
                         </h2>
                         <p style={{ color: '#94a3b8', fontSize: '1.1rem', marginBottom: '30px' }}>
-                            SHNOOR INTERNATIONAL LLC has been formed to work progressively in the field of various IT needs focusing primarily on IT Consulting & Staffing, IT Product Development, and global trade solutions.
+                            Techlance Solutions has been formed to work progressively in the field of various IT needs focusing primarily on IT Consulting & Staffing, IT Product Development, and global trade solutions.
                         </p>
                         
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
@@ -101,3 +101,4 @@ const About = () => {
 };
 
 export default About;
+

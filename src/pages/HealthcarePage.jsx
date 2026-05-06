@@ -63,7 +63,7 @@ const HealthcarePage = () => {
                 <div style={{ padding: '100px 0', textAlign: 'center' }}>
                     <h2 style={{ fontSize: '3.5rem', fontWeight: '900', color: '#0f172a', marginBottom: '30px' }}>What we do</h2>
                     <p style={{ fontSize: '1.2rem', color: '#64748b', maxWidth: '1000px', margin: '0 auto 60px', lineHeight: '1.8' }}>
-                        At SHNOOR International LLC, we leverage advanced healthcare software solutions combined with data intelligence and AI to help healthcare providers streamline operations, enhance patient care, and improve clinical outcomes. Our systems utilize secure data management, predictive analytics, and intelligent automation to transform complex healthcare data into actionable insights and smarter decision-making.
+                        At Techlance Solutions, we leverage advanced healthcare software solutions combined with data intelligence and AI to help healthcare providers streamline operations, enhance patient care, and improve clinical outcomes. Our systems utilize secure data management, predictive analytics, and intelligent automation to transform complex healthcare data into actionable insights and smarter decision-making.
                     </p>
 
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '30px' }} className="grid-responsive-3">
@@ -148,3 +148,4 @@ const HealthcarePage = () => {
 };
 
 export default HealthcarePage;
+

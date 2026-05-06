@@ -16,7 +16,7 @@ const AIPage = () => {
         {
             title: "AI Driven Predictive Analysis",
             image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800",
-            desc: "SHNOOR International LLC utilizes AI and advanced machine learning for predictive analysis. We help businesses stay ahead by forecasting trends, identifying risks, and uncovering new opportunities. Our solutions analyze historical data and patterns to generate highly accurate, actionable forecasts that drive improved decision-making."
+            desc: "Techlance Solutions utilizes AI and advanced machine learning for predictive analysis. We help businesses stay ahead by forecasting trends, identifying risks, and uncovering new opportunities. Our solutions analyze historical data and patterns to generate highly accurate, actionable forecasts that drive improved decision-making."
         }
     ];
 
@@ -196,3 +196,4 @@ const AIPage = () => {
 };
 
 export default AIPage;
+

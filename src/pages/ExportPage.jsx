@@ -13,7 +13,7 @@ const ExportPage = () => {
         {
             title: "International Shipping & Logistics",
             image: "https://images.weserv.nl/?url=images.unsplash.com/photo-1494412519320-aa613dfb7738&w=800",
-            description: "At SHNOOR International LLC, we make global trade simple by delivering reliable, efficient, and cost-effective international shipping & logistics solutions. From India to markets across the UAE, Bahrain, Qatar, Oman, Malaysia, and beyond, we ensure your products reach their destination on time and in perfect condition.",
+            description: "At Techlance Solutions, we make global trade simple by delivering reliable, efficient, and cost-effective international shipping & logistics solutions. From India to markets across the UAE, Bahrain, Qatar, Oman, Malaysia, and beyond, we ensure your products reach their destination on time and in perfect condition.",
             color: "#f8fafc"
         },
         {
@@ -57,7 +57,7 @@ const ExportPage = () => {
                     >
                         <h2 style={{ fontSize: '1.8rem', fontWeight: '800', color: '#f59e0b', marginBottom: '20px' }}>Connecting Markets. Driving Growth.</h2>
                         <p style={{ fontSize: '1.2rem', lineHeight: '1.8', fontWeight: '500' }}>
-                            At <strong>SHNOOR International LLC</strong>, we bridge markets by delivering high-quality products from India to global destinations including the United Arab Emirates, Bahrain, Qatar, Oman, and Malaysia. Our import and export services are built on trust, transparency, and timely delivery, ensuring seamless cross-border trade.
+                            At <strong>Techlance Solutions</strong>, we bridge markets by delivering high-quality products from India to global destinations including the United Arab Emirates, Bahrain, Qatar, Oman, and Malaysia. Our import and export services are built on trust, transparency, and timely delivery, ensuring seamless cross-border trade.
                         </p>
                     </motion.div>
                 </div>
@@ -106,7 +106,7 @@ const ExportPage = () => {
                     
                     <div style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'left' }}>
                         <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#334155', marginBottom: '30px' }}>
-                            At <strong>SHNOOR International LLC</strong>, we bridge markets by delivering high-quality products from India to global destinations including the United Arab Emirates, Bahrain, Qatar, Oman, and Malaysia. Our import and export services are built on trust, transparency, and timely delivery, ensuring seamless cross-border trade.
+                            At <strong>Techlance Solutions</strong>, we bridge markets by delivering high-quality products from India to global destinations including the United Arab Emirates, Bahrain, Qatar, Oman, and Malaysia. Our import and export services are built on trust, transparency, and timely delivery, ensuring seamless cross-border trade.
                         </p>
                         <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#334155', marginBottom: '40px' }}>
                             We specialize in sourcing, packaging, and shipping a wide range of products while complying with international trade standards. With a strong network of suppliers, logistics partners, and compliance experts, we make global trade simple, reliable, and profitable for our clients.
@@ -123,7 +123,7 @@ const ExportPage = () => {
                         </div>
 
                         <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#334155', marginBottom: '40px' }}>
-                            Whether you're looking to export premium products from India or import goods into growing markets, SHNOOR International is your trusted partner in global trade.
+                            Whether you're looking to export premium products from India or import goods into growing markets, Techlance Solutions is your trusted partner in global trade.
                         </p>
 
                         <h3 style={{ fontSize: '1.5rem', fontWeight: '900', color: '#0f172a', marginTop: '60px' }}>Connecting Markets. Driving Growth.</h3>
@@ -143,3 +143,4 @@ const ExportPage = () => {
 };
 
 export default ExportPage;
+

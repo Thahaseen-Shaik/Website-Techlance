@@ -11,7 +11,7 @@ const EnterprisePage = () => {
         {
             title: "SAP Outsourcing",
             image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=800",
-            desc: "SHNOOR International offers specialized SAP outsourcing (ABAP, MM, etc.). Certified SAP experts handle full lifecycle support: development, customization, and maintenance. We optimize your systems for peak performance, cost-efficiency, and scalability. Our global delivery model delivers reliable, 24/7 support for seamless operational excellence."
+            desc: "Techlance Solutions offers specialized SAP outsourcing (ABAP, MM, etc.). Certified SAP experts handle full lifecycle support: development, customization, and maintenance. We optimize your systems for peak performance, cost-efficiency, and scalability. Our global delivery model delivers reliable, 24/7 support for seamless operational excellence."
         },
         {
             title: "Business Process Automation",
@@ -21,7 +21,7 @@ const EnterprisePage = () => {
         {
             title: "IT Infrastructure & Management",
             image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=800",
-            desc: "At SHNOOR International LLC, we design, implement, and manage robust IT infrastructures that keep your business running smoothly and securely. Covering everything from on-premises systems to advanced cloud-based environments, we ensure your IT backbone is reliable, highly scalable, and perpetually optimized for peak performance and robust security against emerging threats."
+            desc: "At Techlance Solutions, we design, implement, and manage robust IT infrastructures that keep your business running smoothly and securely. Covering everything from on-premises systems to advanced cloud-based environments, we ensure your IT backbone is reliable, highly scalable, and perpetually optimized for peak performance and robust security against emerging threats."
         },
         {
             title: "Performance Monitoring & Optimisation",
@@ -189,3 +189,4 @@ const EnterprisePage = () => {
 };
 
 export default EnterprisePage;
+

@@ -23,7 +23,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', fontWeight: '600' }}>Email Us</p>
-                                    <p style={{ fontSize: '1.1rem', color: 'var(--secondary)', fontWeight: '700' }}>info@shnoor.com</p>
+                                    <p style={{ fontSize: '1.1rem', color: 'var(--secondary)', fontWeight: '700' }}>info@techlance.com</p>
                                 </div>
                             </div>
                             <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
@@ -54,7 +54,7 @@ const Contact = () => {
                         style={{ background: '#fff', padding: '60px', borderRadius: '40px', boxShadow: '0 40px 80px rgba(0,0,0,0.08)', border: '1px solid var(--border)' }}
                     >
                         <form action="https://formsubmit.co/lmoksha.132@gmail.com" method="POST" style={{ display: 'flex', flexDirection: 'column', gap: '25px' }}>
-                            <input type="hidden" name="_subject" value="New Contact Inquiry - Shnoor International" />
+                            <input type="hidden" name="_subject" value="New Contact Inquiry - Techlance Solutions" />
                             <input type="hidden" name="_template" value="table" />
                             
                             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
@@ -93,3 +93,4 @@ const Contact = () => {
 };
 
 export default Contact;
+

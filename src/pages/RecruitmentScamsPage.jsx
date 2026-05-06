@@ -21,7 +21,7 @@ const RecruitmentScamsPage = () => {
                         transition={{ duration: 0.8 }}
                         style={{ fontSize: '3.5rem', fontWeight: 'bold', marginBottom: '30px', lineHeight: '1.2' }}
                     >
-                        Recruitment Scams Awareness – SHNOOR International
+                        Recruitment Scams Awareness – Techlance Solutions
                     </motion.h1>
                     <motion.p 
                         initial={{ opacity: 0 }}
@@ -29,7 +29,7 @@ const RecruitmentScamsPage = () => {
                         transition={{ duration: 1, delay: 0.2 }}
                         style={{ fontSize: '1.2rem', lineHeight: '1.8', maxWidth: '900px', opacity: 0.9 }}
                     >
-                        At SHNOOR International, we are committed to maintaining the highest standards of transparency, trust, and ethical practices in all our recruitment and consultancy services. Unfortunately, many fraudulent individuals and unauthorized agencies misuse the name of reputed companies to mislead job seekers with fake job offers, fraudulent interviews, and false promises of overseas employment.
+                        At Techlance Solutions, we are committed to maintaining the highest standards of transparency, trust, and ethical practices in all our recruitment and consultancy services. Unfortunately, many fraudulent individuals and unauthorized agencies misuse the name of reputed companies to mislead job seekers with fake job offers, fraudulent interviews, and false promises of overseas employment.
                     </motion.p>
                 </div>
             </motion.div>
@@ -44,7 +44,7 @@ const RecruitmentScamsPage = () => {
                 >
                     <h2 style={{ fontSize: '2.8rem', fontWeight: 'bold', marginBottom: '30px', color: '#0c355a' }}>What Are Recruitment Scams?</h2>
                     <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#444' }}>
-                        Recruitment scams involve fraudulent job advertisements, fake offer letters, or demands for money under the guise of employment opportunities. Scammers may use emails, fake websites, social media platforms, or messaging apps to target job seekers by pretending to represent SHNOOR International.
+                        Recruitment scams involve fraudulent job advertisements, fake offer letters, or demands for money under the guise of employment opportunities. Scammers may use emails, fake websites, social media platforms, or messaging apps to target job seekers by pretending to represent Techlance Solutions.
                     </p>
                 </motion.div>
 
@@ -62,10 +62,10 @@ const RecruitmentScamsPage = () => {
                         <li>Unofficial communication from personal email accounts (e.g., Gmail, Yahoo, Hotmail) instead of our verified domain.</li>
                         <li>Poorly written offer letters with suspicious formatting or spelling errors.</li>
                         <li>Promises of guaranteed jobs without interviews.</li>
-                        <li>Fake websites or social media pages claiming to be SHNOOR International.</li>
+                        <li>Fake websites or social media pages claiming to be Techlance Solutions.</li>
                     </ul>
                     <p style={{ marginTop: '20px', fontWeight: 'bold', color: '#0c355a' }}>
-                        Important: SHNOOR International never charges job seekers any money for interviews, job applications, or placements.
+                        Important: Techlance Solutions never charges job seekers any money for interviews, job applications, or placements.
                     </p>
                 </motion.div>
 
@@ -96,7 +96,7 @@ const RecruitmentScamsPage = () => {
                     <ol style={{ fontSize: '1.1rem', lineHeight: '2', color: '#444', paddingLeft: '20px' }}>
                         <li>Never share personal or financial details with unknown recruiters.</li>
                         <li>Verify email addresses and websites before responding.</li>
-                        <li>Report suspicious activity to SHNOOR International's official contact channels.</li>
+                        <li>Report suspicious activity to Techlance Solutions' official contact channels.</li>
                         <li>Always check with our HR Department before accepting any offer.</li>
                     </ol>
                 </motion.div>
@@ -110,10 +110,10 @@ const RecruitmentScamsPage = () => {
                 >
                     <h2 style={{ fontSize: '2.8rem', fontWeight: 'bold', marginBottom: '30px', color: '#0c355a' }}>Report Fraud</h2>
                     <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#444', marginBottom: '20px' }}>
-                        If you suspect a recruitment scam using the name of SHNOOR International, please contact us immediately:
+                        If you suspect a recruitment scam using the name of Techlance Solutions, please contact us immediately:
                     </p>
-                    <a href="mailto:hr@shnoor.com" style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#f59e0b', textDecoration: 'none' }}>
-                        hr@shnoor.com
+                    <a href="mailto:hr@techlance.com" style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#f59e0b', textDecoration: 'none' }}>
+                        hr@techlance.com
                     </a>
                     <p style={{ marginTop: '30px', fontSize: '1.1rem', fontWeight: 'bold' }}>
                         Together, we can fight recruitment fraud and ensure a safe and transparent job search experience.
@@ -125,3 +125,4 @@ const RecruitmentScamsPage = () => {
 };
 
 export default RecruitmentScamsPage;
+

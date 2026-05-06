@@ -38,10 +38,10 @@ const LogisticsPage = () => {
                             marginBottom: '30px', 
                             color: '#0f172a' 
                         }}>
-                            Logistics Services | <span style={{ color: '#f59e0b' }}>Shnoor</span> International LLC
+                            Logistics Services | <span style={{ color: '#f59e0b' }}>Techlance</span> International LLC
                         </h1>
                         <p style={{ fontSize: '1.2rem', lineHeight: '1.8', color: '#64748b', marginBottom: '40px', maxWidth: '600px' }}>
-                            At SHNOOR International LLC, we specialize in providing efficient, reliable, and end-to-end logistics solutions tailored to meet the needs of businesses across industries. With a strong network, modern infrastructure, and experienced professionals, we ensure your goods move seamlessly from origin to destination.
+                            At Techlance Solutions, we specialize in providing efficient, reliable, and end-to-end logistics solutions tailored to meet the needs of businesses across industries. With a strong network, modern infrastructure, and experienced professionals, we ensure your goods move seamlessly from origin to destination.
                         </p>
                         <Link to="/import-and-export" style={{ 
                             display: 'inline-block', 
@@ -78,7 +78,7 @@ const LogisticsPage = () => {
                         style={{ marginBottom: '60px' }}
                     >
                         <p style={{ fontSize: '1.2rem', lineHeight: '1.8', color: '#64748b', marginBottom: '30px' }}>
-                            At **SHNOOR International LLC**, we simplify global trade with reliable logistics management solutions. We specialize in providing dry containers for seamless import and export operations, ensuring safe and timely delivery of goods across international markets.
+                            At **Techlance Solutions**, we simplify global trade with reliable logistics management solutions. We specialize in providing dry containers for seamless import and export operations, ensuring safe and timely delivery of goods across international markets.
                         </p>
                         <p style={{ fontSize: '1.2rem', lineHeight: '1.8', color: '#64748b' }}>
                             With strong operational bases at **Mumbai Port** and **Mundra Port**, Gujarat, we offer unmatched connectivity and efficiency for businesses looking to expand their global reach. Our dedicated team ensures every shipment is handled with precision, from documentation to delivery, so clients can focus on growing their business while we manage the logistics.
@@ -138,10 +138,10 @@ const LogisticsPage = () => {
                             <span style={{ color: '#f59e0b' }}>From Port to Destination—Handled with Care.</span>
                         </h2>
                         <p style={{ fontSize: '1.2rem', lineHeight: '1.8', color: '#64748b', maxWidth: '900px', margin: '0 auto 40px auto' }}>
-                            With **SHNOOR International LLC**, you get more than just a logistics provider—you gain a strategic partner committed to minimizing costs, reducing delays, and maximizing efficiency. Our expert team ensures complete compliance with international standards while offering flexible solutions tailored to your business requirements.
+                            With **Techlance Solutions**, you get more than just a logistics provider—you gain a strategic partner committed to minimizing costs, reducing delays, and maximizing efficiency. Our expert team ensures complete compliance with international standards while offering flexible solutions tailored to your business requirements.
                         </p>
                         <p style={{ fontSize: '1.4rem', fontWeight: 'bold', color: '#0c355a' }}>
-                            At SHNOOR International LLC, we don't just move goods—we move businesses forward.
+                            At Techlance Solutions, we don't just move goods—we move businesses forward.
                         </p>
                     </motion.div>
                 </div>
@@ -159,3 +159,4 @@ const LogisticsPage = () => {
 };
 
 export default LogisticsPage;
+

@@ -40,7 +40,7 @@ const AboutPage = () => {
                             Empowering Growth Through <span style={{ color: '#f59e0b' }}>Technology</span> & Trade
                         </h1>
                         <p style={{ fontSize: '1.2rem', lineHeight: '1.8', color: '#64748b', marginBottom: '40px', maxWidth: '500px' }}>
-                            At Shnoor International, we specialize in delivering innovative strategies and seamless execution to help businesses expand beyond borders.
+                            At Techlance Solutions, we specialize in delivering innovative strategies and seamless execution to help businesses expand beyond borders.
                         </p>
                     </motion.div>
                     <motion.div
@@ -81,7 +81,7 @@ const AboutPage = () => {
                         viewport={{ once: true }}
                         style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#64748b', marginBottom: '40px' }}
                     >
-                        Our team combines industry expertise with innovative thinking to deliver solutions that are tailored, scalable, and future ready. Whether you're seeking end-to-end product development, specialized IT talent, or application design that blends functionality with creativity—SHNOOR International is here to help you achieve success.
+                        Our team combines industry expertise with innovative thinking to deliver solutions that are tailored, scalable, and future ready. Whether you're seeking end-to-end product development, specialized IT talent, or application design that blends functionality with creativity—Techlance Solutions is here to help you achieve success.
                     </motion.p>
 
                     <motion.div 
@@ -90,7 +90,7 @@ const AboutPage = () => {
                         viewport={{ once: true }}
                         style={{ marginBottom: '60px' }}
                     >
-                        <h3 style={{ fontSize: '1.8rem', fontWeight: 'bold', color: '#0f172a', marginBottom: '25px' }}>Why Choose SHNOOR INTERNATIONAL LLC?</h3>
+                        <h3 style={{ fontSize: '1.8rem', fontWeight: 'bold', color: '#0f172a', marginBottom: '25px' }}>Why Choose Techlance Solutions?</h3>
                         <ul style={{ listStyle: 'none', padding: 0, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px' }}>
                             {[
                                 "Proven record in multiple IT Domains.",
@@ -113,10 +113,10 @@ const AboutPage = () => {
                         style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}
                     >
                         <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#64748b' }}>
-                            At SHNOOR International LLC, we don't just offer services—we build long-term partnerships that help businesses thrive in both the digital and global marketplace. By blending technological expertise with international trade experience, we empower organizations to innovate faster, operate smarter, and reach new markets with confidence.
+                            At Techlance Solutions, we don't just offer services—we build long-term partnerships that help businesses thrive in both the digital and global marketplace. By blending technological expertise with international trade experience, we empower organizations to innovate faster, operate smarter, and reach new markets with confidence.
                         </p>
                         <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#64748b' }}>
-                            Our expertise in cross-border trade means smooth operations, transparent processes, and compliance with international standards. Whether it's sourcing premium goods from India or delivering products to global destinations, SHNOOR International is your bridge to international business growth.
+                            Our expertise in cross-border trade means smooth operations, transparent processes, and compliance with international standards. Whether it's sourcing premium goods from India or delivering products to global destinations, Techlance Solutions is your bridge to international business growth.
                         </p>
                         <p style={{ fontSize: '1.25rem', fontWeight: 'bold', color: '#0c355a', marginTop: '20px' }}>
                             In a world where connections matter, we bring technology, trust, and trade together.
@@ -137,3 +137,4 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
+

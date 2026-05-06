@@ -93,7 +93,7 @@ const ApplicationFormPage = () => {
                     >
                         <form action="https://formsubmit.co/lmoksha.132@gmail.com" method="POST" encType="multipart/form-data" style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
                             {/* FormSubmit Configuration */}
-                            <input type="hidden" name="_subject" value="New Job Application - Shnoor International" />
+                            <input type="hidden" name="_subject" value="New Job Application - Techlance Solutions" />
                             <input type="hidden" name="_template" value="table" />
                             
                             <div className="input-group">
@@ -219,3 +219,4 @@ const textareaStyle = {
 };
 
 export default ApplicationFormPage;
+

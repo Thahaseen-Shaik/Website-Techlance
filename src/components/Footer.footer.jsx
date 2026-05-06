@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="container">
                 <div style={{ display: 'grid', gridTemplateColumns: '1.5fr 1fr 1fr 1.2fr', gap: '60px', marginBottom: '80px' }} className="grid-footer">
                     <div>
-                        <img src="/logo.png" alt="SHNOOR Logo" style={{ height: '70px', marginBottom: '30px', filter: 'brightness(0) invert(1)' }} />
+                        <img src="/logo.png" alt="Techlance Logo" style={{ height: '70px', marginBottom: '30px', filter: 'brightness(0) invert(1)' }} />
                         <p style={{ opacity: 0.7, lineHeight: 1.8, marginBottom: '30px', maxWidth: '350px' }}>
                             Bridging innovation and trade with expert IT solutions and global reach. Headquartered in Muscat, Oman.
                         </p>
@@ -56,7 +56,7 @@ const Footer = () => {
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', opacity: 0.8 }}>
                             <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
                                 <Mail size={20} color="var(--primary)" />
-                                <span>info@shnoor.com</span>
+                                <span>info@techlance.com</span>
                             </div>
                             <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
                                 <Phone size={20} color="var(--primary)" />
@@ -77,7 +77,7 @@ const Footer = () => {
                     opacity: 0.6,
                     fontSize: '0.9rem'
                 }}>
-                    <p>© {new Date().getFullYear()} Shnoor International LLC. All rights reserved.</p>
+                    <p>© {new Date().getFullYear()} Techlance Solutions. All rights reserved.</p>
                 </div>
             </div>
 
@@ -95,3 +95,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

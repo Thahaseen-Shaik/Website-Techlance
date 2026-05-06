@@ -6,17 +6,17 @@ const CloudPage = () => {
         {
             title: "AWS Cloud",
             image: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
-            description: "At SHNOOR International LLC, we help businesses unlock the full potential of Amazon Web Services (AWS)—the world's most comprehensive and widely adopted cloud platform. Whether you're migrating to the cloud, optimizing existing workloads, or building next-gen applications, our AWS-certified experts deliver secure, scalable, and cost-effective solutions tailored to your business needs."
+            description: "At Techlance Solutions, we help businesses unlock the full potential of Amazon Web Services (AWS)—the world's most comprehensive and widely adopted cloud platform. Whether you're migrating to the cloud, optimizing existing workloads, or building next-gen applications, our AWS-certified experts deliver secure, scalable, and cost-effective solutions tailored to your business needs."
         },
         {
             title: "Google Cloud",
             image: "https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Cloud_logo.svg",
-            description: "At SHNOOR International LLC, we help businesses leverage the capabilities of Google Cloud Platform (GCP) to achieve agility, scalability, and innovation. Whether you're migrating workloads, building intelligent applications, or optimizing your infrastructure, our Google Cloud experts deliver solutions that are secure, cost-effective, and performance-driven."
+            description: "At Techlance Solutions, we help businesses leverage the capabilities of Google Cloud Platform (GCP) to achieve agility, scalability, and innovation. Whether you're migrating workloads, building intelligent applications, or optimizing your infrastructure, our Google Cloud experts deliver solutions that are secure, cost-effective, and performance-driven."
         },
         {
             title: "Microsoft Cloud",
             image: "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
-            description: "At SHNOOR International LLC, we help organizations harness the full potential of Microsoft Azure—one of the world's leading cloud platforms. From infrastructure modernization to advanced analytics and AI integration, we design and implement Azure solutions that align with your business goals, ensuring security, efficiency, and growth."
+            description: "At Techlance Solutions, we help organizations harness the full potential of Microsoft Azure—one of the world's leading cloud platforms. From infrastructure modernization to advanced analytics and AI integration, we design and implement Azure solutions that align with your business goals, ensuring security, efficiency, and growth."
         }
     ];
 
@@ -145,7 +145,7 @@ const CloudPage = () => {
 
                     <div style={{ maxWidth: '900px', margin: '0 auto', color: '#475569', lineHeight: '1.8', fontSize: '1.1rem' }}>
                         <p style={{ marginBottom: '30px' }}>
-                            At SHNOOR International LLC, we believe that great partnerships drive great achievements. We collaborate with industry-leading technology providers, trade networks, and business associates to deliver solutions that combine innovation, expertise, and global reach.
+                            At Techlance Solutions, we believe that great partnerships drive great achievements. We collaborate with industry-leading technology providers, trade networks, and business associates to deliver solutions that combine innovation, expertise, and global reach.
                         </p>
                         <p style={{ marginBottom: '40px' }}>
                             Our partners play a vital role in helping us provide world-class IT services, SAP outsourcing, and international trade solutions. Together, we create value that empowers businesses to grow, adapt, and thrive in competitive markets.
@@ -164,7 +164,7 @@ const CloudPage = () => {
                         </div>
 
                         <p style={{ marginTop: '40px' }}>
-                            From cloud service providers to global logistics networks, our partners help us deliver end-to-end solutions that make a difference. At SHNOOR International, partnerships aren't just about contracts—they're about shared goals, trust, and results.
+                            From cloud service providers to global logistics networks, our partners help us deliver end-to-end solutions that make a difference. At Techlance Solutions, partnerships aren't just about contracts—they're about shared goals, trust, and results.
                         </p>
                     </div>
                 </div>
@@ -182,3 +182,4 @@ const CloudPage = () => {
 };
 
 export default CloudPage;
+

@@ -118,7 +118,7 @@ const VerificationPage = () => {
                             </p>
                             <div style={{ display: 'flex', gap: '40px', marginBottom: '40px' }}>
                                 <a 
-                                    href="/shnoor-verification.pdf" 
+                                    href="/techlance-verification.pdf" 
                                     download 
                                     style={{ 
                                         backgroundColor: '#fff', 
@@ -180,8 +180,8 @@ const VerificationPage = () => {
 
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '30px' }} className="grid-responsive">
                         {[
-                            { name: 'Recruitment Lead', location: 'San Francisco', text: "The speed and accuracy of Shnoor's checks are unmatched, making our hiring process seamless and reliable." },
-                            { name: 'HR Manager', location: 'New York', text: "Shnoor's background checks saved us from a costly hire." }
+                            { name: 'Recruitment Lead', location: 'San Francisco', text: "The speed and accuracy of Techlance's checks are unmatched, making our hiring process seamless and reliable." },
+                            { name: 'HR Manager', location: 'New York', text: "Techlance's background checks saved us from a costly hire." }
                         ].map((item, i) => (
                             <div key={i} style={{ backgroundColor: '#fff', padding: '40px', borderRadius: '15px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)' }}>
                                 <div style={{ color: '#000', fontSize: '1.5rem', marginBottom: '20px' }}>★★★★★</div>
@@ -234,3 +234,4 @@ const VerificationPage = () => {
 };
 
 export default VerificationPage;
+

@@ -12,7 +12,7 @@ export const blogData = {
             },
             {
                 type: "paragraph",
-                text: "In today’s global economy, business success depends on building reliable connections across borders. At SHNOOR International, we combine our expertise in technology with a strong foundation in international trade, making us the trusted choice for companies looking to expand their reach."
+                text: "In today’s global economy, business success depends on building reliable connections across borders. At Techlance Solutions, we combine our expertise in technology with a strong foundation in international trade, making us the trusted choice for companies looking to expand their reach."
             },
             {
                 type: "heading",
@@ -32,7 +32,7 @@ export const blogData = {
             },
             {
                 type: "heading",
-                text: "Why Choose SHNOOR International?"
+                text: "Why Choose Techlance Solutions?"
             },
             {
                 type: "paragraph",
@@ -44,12 +44,12 @@ export const blogData = {
             },
             {
                 type: "paragraph",
-                text: "What makes SHNOOR International unique is our dual focus. While we lead in IT Consulting and SAP Outsourcing, our trade division ensures that businesses can also benefit from global commerce without dealing with the usual challenges of import/export operations. At SHNOOR International, we don’t just move goods—we move businesses forward."
+                text: "What makes Techlance Solutions unique is our dual focus. While we lead in IT Consulting and SAP Outsourcing, our trade division ensures that businesses can also benefit from global commerce without dealing with the usual challenges of import/export operations. At Techlance Solutions, we don’t just move goods—we move businesses forward."
             }
         ]
     },
-    "it-consulting-shnoor": {
-        title: "IT Consulting at SHNOOR International – Driving Innovation & Efficiency",
+    "it-consulting-techlance": {
+        title: "IT Consulting at Techlance Solutions – Driving Innovation & Efficiency",
         subtitle: "In today’s competitive business environment, technology is more than just a tool—it’s a catalyst for transformation.",
         date: "8/15/2025",
         readTime: "1 min read",
@@ -61,7 +61,7 @@ export const blogData = {
             },
             {
                 type: "paragraph",
-                text: "In today’s competitive business environment, technology is more than just a tool—it’s a catalyst for transformation. At SHNOOR International, our IT Consulting services are designed to help organizations harness the power of technology to achieve operational excellence, accelerate growth, and stay ahead of industry trends."
+                text: "In today’s competitive business environment, technology is more than just a tool—it’s a catalyst for transformation. At Techlance Solutions, our IT Consulting services are designed to help organizations harness the power of technology to achieve operational excellence, accelerate growth, and stay ahead of industry trends."
             },
             {
                 type: "heading",
@@ -81,7 +81,7 @@ export const blogData = {
             },
             {
                 type: "heading",
-                text: "Why Partner with SHNOOR International?"
+                text: "Why Partner with Techlance Solutions?"
             },
             {
                 type: "paragraph",
@@ -93,12 +93,12 @@ export const blogData = {
             },
             {
                 type: "paragraph",
-                text: "At SHNOOR International, we don’t just provide IT consulting—we provide strategic partnership. Our goal is to help you leverage technology in a way that not only solves today’s challenges but also positions you for tomorrow’s opportunities."
+                text: "At Techlance Solutions, we don’t just provide IT consulting—we provide strategic partnership. Our goal is to help you leverage technology in a way that not only solves today’s challenges but also positions you for tomorrow’s opportunities."
             }
         ]
     },
-    "sap-outsourcing-shnoor": {
-        title: "SAP Outsourcing with Shnoor: Enhancing Business Efficiency",
+    "sap-outsourcing-techlance": {
+        title: "SAP Outsourcing with Techlance Solutions: Enhancing Business Efficiency",
         subtitle: "In a fast-paced business environment, specialized expertise in ABAP and MM can make the difference between simply running software and truly optimizing business operations.",
         date: "8/15/2025",
         readTime: "1 min read",
@@ -110,7 +110,7 @@ export const blogData = {
             },
             {
                 type: "paragraph",
-                text: "In a fast-paced business environment, efficiency, accuracy, and adaptability are key to staying competitive. For organizations using SAP, specialized expertise in ABAP (Advanced Business Application Programming) and MM (Materials Management) can make the difference between simply running software and truly optimizing business operations. At SHNOOR International, we provide end-to-end SAP outsourcing services for ABAP and MM, ensuring your systems work seamlessly while your business focuses on growth."
+                text: "In a fast-paced business environment, efficiency, accuracy, and adaptability are key to staying competitive. For organizations using SAP, specialized expertise in ABAP (Advanced Business Application Programming) and MM (Materials Management) can make the difference between simply running software and truly optimizing business operations. At Techlance Solutions, we provide end-to-end SAP outsourcing services for ABAP and MM, ensuring your systems work seamlessly while your business focuses on growth."
             },
             {
                 type: "heading",
@@ -134,7 +134,7 @@ export const blogData = {
             },
             {
                 type: "heading",
-                text: "Benefits of Choosing SHNOOR International"
+                text: "Benefits of Choosing Techlance Solutions"
             },
             {
                 type: "paragraph",
@@ -142,11 +142,11 @@ export const blogData = {
             },
             {
                 type: "heading",
-                text: "Conclusion: Why SHNOOR International?"
+                text: "Conclusion: Why Techlance Solutions?"
             },
             {
                 type: "paragraph",
-                text: "At SHNOOR International, we believe in connecting technology and trade together. By outsourcing your ABAP and MM requirements to us, you gain a partner who understands not just the technical side, but also the operational impact of SAP on your business. Whether you need one-off developments or complete project outsourcing, our team ensures your SAP systems deliver measurable ROI."
+                text: "At Techlance Solutions, we believe in connecting technology and trade together. By outsourcing your ABAP and MM requirements to us, you gain a partner who understands not just the technical side, but also the operational impact of SAP on your business. Whether you need one-off developments or complete project outsourcing, our team ensures your SAP systems deliver measurable ROI."
             }
         ]
     },
@@ -963,3 +963,4 @@ export const blogData = {
         ]
     }
 };
+

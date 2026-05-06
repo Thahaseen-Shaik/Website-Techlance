@@ -16,7 +16,7 @@ const StaffingPage = () => {
         {
             title: "Talent Acquisition & Workforce Management",
             image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800",
-            desc: "At SHNOOR International LLC, we help organizations attract, hire, and retain the best talent while ensuring efficient workforce management to drive business success. Our solutions are tailored to meet the unique needs of each client, from sourcing top-tier candidates to optimizing team performance."
+            desc: "At Techlance Solutions, we help organizations attract, hire, and retain the best talent while ensuring efficient workforce management to drive business success. Our solutions are tailored to meet the unique needs of each client, from sourcing top-tier candidates to optimizing team performance."
         }
     ];
 
@@ -48,7 +48,7 @@ const StaffingPage = () => {
                             Connecting Businesses with <span style={{ color: '#f59e0b' }}>Elite</span> IT Talent
                         </h1>
                         <p style={{ fontSize: '1.2rem', lineHeight: '1.8', color: '#64748b', marginBottom: '40px', maxWidth: '500px' }}>
-                            At SHNOOR International LLC, we deliver end-to-end consulting and staffing services that empower businesses to scale efficiently, innovate faster, and achieve sustainable growth.
+                            At Techlance Solutions, we deliver end-to-end consulting and staffing services that empower businesses to scale efficiently, innovate faster, and achieve sustainable growth.
                         </p>
                         <Link to="/contact" style={{ 
                             backgroundColor: '#f59e0b', 
@@ -154,7 +154,7 @@ const StaffingPage = () => {
                 <div>
                     <h2 style={{ fontSize: '3.5rem', fontWeight: '900', color: '#0f172a', marginBottom: '30px' }}>Empowering Your Business Success</h2>
                     <p style={{ fontSize: '1.2rem', lineHeight: '1.8', color: '#64748b' }}>
-                        At Shnoor International LLC, we specialize in tailored consulting solutions and expert staffing to foster long-term partnerships that drive client success.
+                        At Techlance Solutions, we specialize in tailored consulting solutions and expert staffing to foster long-term partnerships that drive client success.
                     </p>
                 </div>
                 <div>
@@ -186,3 +186,4 @@ const StaffingPage = () => {
 };
 
 export default StaffingPage;
+

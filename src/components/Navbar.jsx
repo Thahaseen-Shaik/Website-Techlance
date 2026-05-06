@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Link, useNavigate } from 'react-router-dom';
+import { Menu, X, ChevronDown, LogOut, CircleUserRound } from 'lucide-react';
+import useAuth from '../context/useAuth';
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [dropdownOpen, setDropdownOpen] = useState(false);
+    const { currentUser, logout } = useAuth();
+    const navigate = useNavigate();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -35,6 +38,12 @@ const Navbar = () => {
         { name: 'Contact', href: '/contact' },
     ];
 
+    const handleLogout = () => {
+        logout();
+        navigate('/login', { replace: true });
+        setMobileMenuOpen(false);
+    };
+
     return (
         <nav style={{ 
             position: 'fixed',
@@ -42,16 +51,46 @@ const Navbar = () => {
             left: 0,
             width: '100%',
             zIndex: 1000,
-            backgroundColor: scrolled ? 'rgba(255, 255, 255, 0.98)' : 'rgba(255, 255, 255, 0.95)',
+            backgroundColor: scrolled ? 'var(--nav-bg-scrolled)' : 'var(--nav-bg)',
             boxShadow: '0 10px 40px rgba(15, 23, 42, 0.08)',
             backdropFilter: 'blur(20px)',
             transition: 'var(--transition)',
             padding: scrolled ? '12px 0' : '20px 0',
-            borderBottom: '1px solid rgba(15, 23, 42, 0.1)'
+            borderBottom: '1px solid var(--border)'
         }}>
             <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <Link to="/" style={{ display: 'flex', alignItems: 'center' }}>
-                    <img src="/logo.png" alt="SHNOOR Logo" style={{ height: scrolled ? '55px' : '65px', width: 'auto', transition: '0.3s' }} />
+                    <div style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '12px',
+                        padding: '10px 14px',
+                        borderRadius: '18px',
+                        background: '#fff',
+                        border: '1px solid rgba(226, 232, 240, 0.8)',
+                        boxShadow: '0 8px 28px rgba(15, 23, 42, 0.08)',
+                        transition: '0.3s',
+                    }}>
+                        <div style={{
+                            width: scrolled ? '44px' : '50px',
+                            height: scrolled ? '44px' : '50px',
+                            borderRadius: '50%',
+                            background: 'linear-gradient(135deg, var(--accent), var(--primary))',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            color: '#fff',
+                            fontWeight: '900',
+                            fontFamily: "'Outfit', sans-serif",
+                            fontSize: '1.1rem'
+                        }}>
+                            T
+                        </div>
+                        <div style={{ display: 'flex', flexDirection: 'column', lineHeight: 1 }}>
+                            <span style={{ fontSize: '0.95rem', fontWeight: '900', letterSpacing: '0.12em', color: 'var(--secondary)' }}>TECHLANCE</span>
+                            <span style={{ fontSize: '0.72rem', fontWeight: '800', letterSpacing: '0.18em', color: 'var(--primary)' }}>SOLUTIONS</span>
+                        </div>
+                    </div>
                 </Link>
 
                 {/* Desktop Nav */}
@@ -117,6 +156,28 @@ const Navbar = () => {
                             )}
                         </div>
                     ))}
+                    {currentUser && (
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                            <div style={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: '8px',
+                                padding: '10px 14px',
+                                borderRadius: '999px',
+                                background: '#eff6ff',
+                                color: 'var(--secondary)',
+                                fontWeight: '700',
+                                border: '1px solid #dbeafe'
+                            }}>
+                                <CircleUserRound size={18} />
+                                <span>{currentUser.name}</span>
+                            </div>
+                            <button type="button" onClick={handleLogout} className="btn-blue" style={{ padding: '12px 18px', borderRadius: '12px' }}>
+                                <LogOut size={16} />
+                                Logout
+                            </button>
+                        </div>
+                    )}
                     <Link to="/contact" className="btn-blue" style={{ padding: '12px 28px', fontSize: '0.95rem', borderRadius: '12px', fontWeight: '700' }}>Get in Touch</Link>
                 </div>
 
@@ -167,6 +228,26 @@ const Navbar = () => {
                             )}
                         </React.Fragment>
                     ))}
+                    {currentUser && (
+                        <button
+                            type="button"
+                            onClick={handleLogout}
+                            style={{
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                gap: '10px',
+                                padding: '14px 18px',
+                                borderRadius: '14px',
+                                background: '#eff6ff',
+                                color: 'var(--secondary)',
+                                fontWeight: '800',
+                                width: 'fit-content'
+                            }}
+                        >
+                            <LogOut size={18} />
+                            Logout
+                        </button>
+                    )}
                 </div>
             )}
 
@@ -186,3 +267,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

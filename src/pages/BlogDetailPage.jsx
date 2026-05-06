@@ -138,7 +138,7 @@ const BlogDetailPage = () => {
                                 <span style={{ margin: 'auto' }}>S</span>
                             </div>
                             <div>
-                                <p style={{ fontSize: '0.875rem', fontWeight: 'bold', margin: 0 }}>Shnoor Editorial</p>
+                                <p style={{ fontSize: '0.875rem', fontWeight: 'bold', margin: 0 }}>Techlance Editorial</p>
                                 <p style={{ fontSize: '0.75rem', color: '#94a3b8', margin: 0 }}>{blog.date}</p>
                             </div>
                         </div>
@@ -297,3 +297,4 @@ const BlogDetailPage = () => {
 };
 
 export default BlogDetailPage;
+

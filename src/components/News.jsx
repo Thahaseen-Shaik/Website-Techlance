@@ -103,15 +103,15 @@ const newsItems = [
     // Page 5
     [
         {
-            title: "SAP OUTSOURCING WITH SHNOOR",
-            slug: "sap-outsourcing-shnoor",
+            title: "SAP Outsourcing with Techlance Solutions",
+            slug: "sap-outsourcing-techlance",
             desc: "In a fast-paced business environment, efficiency, accuracy, and adaptability are key. Learn how our specialized expertise in SAP can optimize your operations.",
             date: "8/15/2025 · 1 min read",
             image: "https://images.weserv.nl/?url=images.unsplash.com/photo-1504384308090-c894fdcc538d&w=1000"
         },
         {
-            title: "IT Consulting at SHNOOR International",
-            slug: "it-consulting-shnoor",
+            title: "IT Consulting at Techlance Solutions",
+            slug: "it-consulting-techlance",
             desc: "Driving Innovation & Efficiency in today's competitive business environment. Our IT consulting services are designed to help you achieve operational excellence.",
             date: "8/15/2025 · 1 min read",
             image: "https://images.weserv.nl/?url=images.unsplash.com/photo-1519389950473-47ba0277781c&w=1000"
@@ -119,7 +119,7 @@ const newsItems = [
         {
             title: "General Trading Got Easier",
             slug: "general-trading-got-easier",
-            desc: "Our expertise in cross-border trade means smooth operations and transparent processes. SHNOOR International is your bridge to international business growth.",
+            desc: "Our expertise in cross-border trade means smooth operations and transparent processes. Techlance Solutions is your bridge to international business growth.",
             date: "8/15/2025 · 1 min read",
             image: "https://images.weserv.nl/?url=images.unsplash.com/photo-1494412574743-019445217683&w=1000"
         }
@@ -250,3 +250,4 @@ const News = () => {
 };
 
 export default News;
+

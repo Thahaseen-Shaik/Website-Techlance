@@ -4,12 +4,12 @@ import { Quote } from 'lucide-react';
 
 const testimonials = [
     {
-        quote: "Working with SHNOOR International LLC has been a game-changer for our business. Their IT consulting team understood our requirements perfectly and delivered a custom solution that improved our efficiency by leaps and bounds.",
+        quote: "Working with Techlance Solutions has been a game-changer for our business. Their IT consulting team understood our requirements perfectly and delivered a custom solution that improved our efficiency by leaps and bounds.",
         author: "Amita Khanna",
         company: "SF Technologies - Singapore"
     },
     {
-        quote: "Their import services were smooth, reliable, and hassle-free. It’s rare to find a partner who excels in both technology and trade—SHNOOR does it effortlessly.",
+        quote: "Their import services were smooth, reliable, and hassle-free. It’s rare to find a partner who excels in both technology and trade—Techlance does it effortlessly.",
         author: "Delivery Head",
         company: "SF Technologies - Singapore"
     }
@@ -65,3 +65,4 @@ const Testimonial = () => {
 };
 
 export default Testimonial;
+

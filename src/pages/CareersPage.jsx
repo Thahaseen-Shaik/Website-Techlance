@@ -44,16 +44,16 @@ const CareersPage = () => {
                         
                         <div style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#64748b', display: 'flex', flexDirection: 'column', gap: '20px' }}>
                             <p>
-                                At SHNOOR International LLC, we believe that great companies are built by great people. We're looking for innovators, problem-solvers, and go-getters who are passionate about making an impact in the worlds of technology and global trade.
+                                At Techlance Solutions, we believe that great companies are built by great people. We're looking for innovators, problem-solvers, and go-getters who are passionate about making an impact in the worlds of technology and global trade.
                             </p>
                             <p>
                                 Whether you're an IT expert, software developer, SAP consultant, business strategist, or trade professional, this is your chance to be part of a company that values creativity, collaboration, and continuous growth.
                             </p>
                             <p>
-                                At SHNOOR International, you won't just be doing a job—you'll be building a career where your skills make a difference.
+                                At Techlance Solutions, you won't just be doing a job—you'll be building a career where your skills make a difference.
                             </p>
                             <p style={{ fontWeight: 'bold', color: '#0f172a', fontSize: '1.3rem', marginTop: '10px' }}>
-                                SHNOOR - Get the future you want. !!
+                                Techlance - Get the future you want. !!
                             </p>
                         </div>
                     </motion.div>
@@ -88,10 +88,10 @@ const CareersPage = () => {
                     <h2 style={{ fontSize: '3.5rem', fontWeight: '800', marginBottom: '30px' }}>Recruitment Scams</h2>
                     <div style={{ maxWidth: '900px', margin: '0 auto' }}>
                         <p style={{ fontSize: '1.2rem', lineHeight: '1.8', opacity: 0.9, marginBottom: '30px' }}>
-                            At SHNOOR International LLC, integrity and transparency are at the heart of our recruitment process. We want to alert all job seekers that we never charge any fees, request payments, or ask for financial information at any stage of our hiring process.
+                            At Techlance Solutions, integrity and transparency are at the heart of our recruitment process. We want to alert all job seekers that we never charge any fees, request payments, or ask for financial information at any stage of our hiring process.
                         </p>
                         <p style={{ fontSize: '1.2rem', lineHeight: '1.8', opacity: 0.9, marginBottom: '40px' }}>
-                            To protect any spam, ensure emails come from **@shnoor.com**. If you receive any communication—via email, phone, social media, or messaging apps—claiming to represent SHNOOR International and requesting money for job opportunities, please treat it as a scam. Such activities are fraudulent and have no connection with our company.
+                            To protect any spam, ensure emails come from **@techlance.com**. If you receive any communication—via email, phone, social media, or messaging apps—claiming to represent Techlance Solutions and requesting money for job opportunities, please treat it as a scam. Such activities are fraudulent and have no connection with our company.
                         </p>
                         <Link 
                             to="/recruitment-scams" 
@@ -113,20 +113,20 @@ const CareersPage = () => {
                     </div>
                 </motion.div>
 
-                {/* Section 3: Explore SHNOOR */}
+                {/* Section 3: Explore Techlance */}
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center', padding: '80px 0' }} className="grid-responsive">
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                     >
-                        <h2 style={{ fontSize: '3.5rem', fontWeight: '800', color: '#0f172a', marginBottom: '30px' }}>Explore SHNOOR</h2>
+                        <h2 style={{ fontSize: '3.5rem', fontWeight: '800', color: '#0f172a', marginBottom: '30px' }}>Explore Techlance</h2>
                         <div style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#64748b', display: 'flex', flexDirection: 'column', gap: '20px' }}>
                             <p>
                                 When you join us, you become part of a passionate, diverse, and forward-thinking team that believes in pushing boundaries and delivering excellence. From IT Consulting, Product Development, and SAP Outsourcing to international import & export operations, our work spans industries, regions, and technologies.
                             </p>
                             <p>
-                                At SHNOOR International LLC, every career path is a journey of growth, innovation, and impact. We are more than just a workplace—we're a dynamic hub where technology meets global trade, creating opportunities that challenge your skills and expand your horizons.
+                                At Techlance Solutions, every career path is a journey of growth, innovation, and impact. We are more than just a workplace—we're a dynamic hub where technology meets global trade, creating opportunities that challenge your skills and expand your horizons.
                             </p>
                         </div>
                         <Link 
@@ -168,7 +168,7 @@ const CareersPage = () => {
                                 textAlign: 'center',
                                 color: '#fff'
                             }}>
-                                <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>Explore SHNOOR</h3>
+                                <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>Explore Techlance</h3>
                                 <p style={{ fontSize: '0.9rem', opacity: 0.9 }}>Where technology meets global trade</p>
                             </div>
                         </div>
@@ -211,7 +211,7 @@ const CareersPage = () => {
 
                     <div style={{ maxWidth: '1000px', margin: '0 auto', fontSize: '1.1rem', lineHeight: '1.8', color: '#64748b', display: 'flex', flexDirection: 'column', gap: '25px' }}>
                         <p>
-                            At SHNOOR International LLC, our clients are at the heart of everything we do. From emerging startups to global enterprises, we work with businesses across industries and geographies—delivering IT solutions, SAP outsourcing, and global trade services that drive measurable results.
+                            At Techlance Solutions, our clients are at the heart of everything we do. From emerging startups to global enterprises, we work with businesses across industries and geographies—delivering IT solutions, SAP outsourcing, and global trade services that drive measurable results.
                         </p>
                         <p>
                             We take pride in earning the trust of organizations in India, UAE, Bahrain, Qatar, Oman, and Malaysia, and our success is built on their success.
@@ -232,3 +232,4 @@ const CareersPage = () => {
 };
 
 export default CareersPage;
+

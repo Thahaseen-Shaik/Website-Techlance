@@ -123,7 +123,7 @@ const ImportExportPage = () => {
                             Authentic Agri-Food & <br />Consumer Goods <span style={{ color: '#f59e0b' }}>Delivered</span>
                         </h1>
                         <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#64748b', marginBottom: '30px' }}>
-                            SHNOOR International LLC is a dynamic organization bridging the worlds of technology and trade. With expertise spanning IT Consulting & Staffing, IT Product Development, and global import and export, we connect India with the UAE, Bahrain, Qatar, Oman, and Malaysia—delivering quality products and building lasting partnerships.
+                            Techlance Solutions is a dynamic organization bridging the worlds of technology and trade. With expertise spanning IT Consulting & Staffing, IT Product Development, and global import and export, we connect India with the UAE, Bahrain, Qatar, Oman, and Malaysia—delivering quality products and building lasting partnerships.
                         </p>
                     </motion.div>
                     <motion.div
@@ -329,7 +329,7 @@ const ImportExportPage = () => {
                     >
                         <h2 style={{ fontSize: '3rem', fontWeight: '900', color: '#0f172a', marginBottom: '40px' }}>Know <span style={{ color: '#f59e0b' }}>More</span></h2>
                         <p style={{ fontSize: '1.2rem', lineHeight: '2', color: '#475569', marginBottom: '30px' }}>
-                            <strong>SHNOOR International LLC</strong> is a dynamic organization bridging the worlds of technology and trade. With expertise spanning IT Consulting & Staffing, IT Product Development, Application Designing & Development, and SAP Outsourcing, we empower businesses with cutting-edge digital solutions. Beyond IT, our strong foothold in global import and export connects India with the UAE, Bahrain, Qatar, Oman, and Malaysia—delivering quality products and building lasting partnerships.
+                            <strong>Techlance Solutions</strong> is a dynamic organization bridging the worlds of technology and trade. With expertise spanning IT Consulting & Staffing, IT Product Development, Application Designing & Development, and SAP Outsourcing, we empower businesses with cutting-edge digital solutions. Beyond IT, our strong foothold in global import and export connects India with the UAE, Bahrain, Qatar, Oman, and Malaysia—delivering quality products and building lasting partnerships.
                         </p>
                         <p style={{ fontSize: '1.3rem', fontWeight: '700', color: '#0f172a', letterSpacing: '0.5px' }}>
                             We are driven by innovation, guided by trust, and committed to delivering value that exceeds expectations.
@@ -365,3 +365,4 @@ const ImportExportPage = () => {
 };
 
 export default ImportExportPage;
+

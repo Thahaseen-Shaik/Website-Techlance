@@ -25,7 +25,7 @@ const Banner = () => {
                         Connecting Technology & Trade <span style={{ color: 'var(--accent)' }}>Together</span>
                     </h2>
                     <p style={{ fontSize: '1.3rem', opacity: 0.9, lineHeight: 2, marginBottom: '30px', textAlign: 'justify' }}>
-                        At SHNOOR International LLC, we believe innovation should have no borders. Our unique approach combines cutting-edge IT solutions with seamless global trade services, helping businesses thrive in both the digital space and the global marketplace.
+                        At Techlance Solutions, we believe innovation should have no borders. Our unique approach combines cutting-edge IT solutions with seamless global trade services, helping businesses thrive in both the digital space and the global marketplace.
                     </p>
                     <p style={{ fontSize: '1.3rem', opacity: 0.9, lineHeight: 2, textAlign: 'justify' }}>
                         By blending technological expertise with international trade experience, we empower organizations to innovate faster, operate smarter, and reach new markets with confidence.
@@ -37,3 +37,4 @@ const Banner = () => {
 };
 
 export default Banner;
+

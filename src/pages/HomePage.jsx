@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import Banner from '../components/Banner';
+import ThemeSelector from '../components/ThemeSelector';
 
 import Testimonial from '../components/Testimonial';
 import Partners from '../components/Partners';
@@ -10,6 +11,7 @@ const HomePage = () => {
     return (
         <>
             <Hero />
+            <ThemeSelector />
             <Banner />
             <Partners />
             <News />
