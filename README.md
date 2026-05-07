@@ -18,13 +18,12 @@ Official website for Techlance Solutions, built with a modern React and Vite fro
 - Native `http` server
 - REST API for authentication and session handling
 - Password hashing with `crypto`
-- In-memory user and session storage
+- SQLite-backed user and session storage
 - Optional email service can be added later for verification and contact forms
 
 ### Database
-- No database is used
-- All users and sessions are stored in memory on the backend
-- Data resets when the server restarts
+- SQLite database stored at `server/data/techlance.sqlite`
+- Users and sessions persist across server restarts
 
 ### Current Status
 - A lightweight backend is implemented in this repository
@@ -53,5 +52,5 @@ npm run server
 
 ## Notes
 
-- The backend is intentionally database-free.
-- If you want persistence later, the next step would be to add MongoDB or PostgreSQL.
+- The SQLite database is isolated to the backend and does not change the frontend app.
+- If you want to add more persisted features later, we can extend the same database instead of touching the UI.
