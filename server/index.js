@@ -1,11 +1,16 @@
 /* global process, Buffer */
 import { createServer } from 'node:http';
 import { randomBytes, randomUUID, scryptSync, timingSafeEqual } from 'node:crypto';
+import {
+  createSession,
+  createUser,
+  databaseInfo,
+  deleteSession,
+  findUserByEmail,
+  findUserBySessionToken,
+} from './database.js';
 
 const PORT = Number(process.env.PORT || 3001);
-
-const usersByEmail = new Map();
-const sessions = new Map();
 
 const jsonHeaders = {
   'Content-Type': 'application/json; charset=utf-8',
@@ -70,12 +75,6 @@ const getToken = (req) => {
   return typeof sessionToken === 'string' ? sessionToken : '';
 };
 
-const createSession = (user) => {
-  const token = randomUUID();
-  sessions.set(token, user.email);
-  return token;
-};
-
 const handleAuthError = (res, message, statusCode = 401) => {
   sendJson(res, statusCode, { ok: false, message });
 };
@@ -90,7 +89,7 @@ const server = createServer(async (req, res) => {
   const url = new URL(req.url || '/', `http://${req.headers.host}`);
 
   if (url.pathname === '/api/health' && req.method === 'GET') {
-    sendJson(res, 200, { ok: true, service: 'Techlance backend', database: null });
+    sendJson(res, 200, { ok: true, service: 'Techlance backend', database: databaseInfo });
     return;
   }
 
@@ -120,7 +119,7 @@ const server = createServer(async (req, res) => {
       return;
     }
 
-    if (usersByEmail.has(email)) {
+    if (findUserByEmail(email)) {
       handleAuthError(res, 'An account with this email already exists.', 409);
       return;
     }
@@ -133,8 +132,18 @@ const server = createServer(async (req, res) => {
       createdAt: new Date().toISOString(),
     };
 
-    usersByEmail.set(email, user);
-    const token = createSession(user);
+    try {
+      createUser(user);
+    } catch (error) {
+      if (String(error?.message || '').includes('UNIQUE')) {
+        handleAuthError(res, 'An account with this email already exists.', 409);
+        return;
+      }
+
+      throw error;
+    }
+
+    const token = createSession(randomUUID(), user.email);
 
     sendJson(res, 201, {
       ok: true,
@@ -153,14 +162,14 @@ const server = createServer(async (req, res) => {
 
     const email = String(body.email || '').trim().toLowerCase();
     const password = String(body.password || '');
-    const user = usersByEmail.get(email);
+    const user = findUserByEmail(email);
 
     if (!user || !verifyPassword(password, user.passwordHash)) {
       handleAuthError(res, 'Invalid email or password.', 401);
       return;
     }
 
-    const token = createSession(user);
+    const token = createSession(randomUUID(), user.email);
     sendJson(res, 200, {
       ok: true,
       token,
@@ -171,16 +180,9 @@ const server = createServer(async (req, res) => {
 
   if (url.pathname === '/api/me' && req.method === 'GET') {
     const token = getToken(req);
-    const email = sessions.get(token);
+    const user = findUserBySessionToken(token);
 
-    if (!email) {
-      handleAuthError(res, 'Unauthorized.', 401);
-      return;
-    }
-
-    const user = usersByEmail.get(email);
     if (!user) {
-      sessions.delete(token);
       handleAuthError(res, 'Unauthorized.', 401);
       return;
     }
@@ -192,7 +194,7 @@ const server = createServer(async (req, res) => {
   if (url.pathname === '/api/logout' && req.method === 'POST') {
     const token = getToken(req);
     if (token) {
-      sessions.delete(token);
+      deleteSession(token);
     }
 
     sendJson(res, 200, { ok: true });
