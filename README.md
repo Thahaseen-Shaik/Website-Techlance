@@ -383,6 +383,16 @@ For business inquiries or collaborations:
 ✅ Browser-Based Authentication  
 ✅ Persistent Sessions  
 ✅ SQLite Database  
+
+# 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+# 👨‍💻 Developed By
+
+Thahaseen Gulam
 ✅ Optional Backend Support  
 ✅ Easy Deployment  
 ✅ Scalable Structure  
